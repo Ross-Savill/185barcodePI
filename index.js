@@ -10,7 +10,7 @@ app.get('/', function(req, res,next) {
     res.status(200).send('<h3>Status: <span style="color:green">Up</span></h3>')
 });
 
-const socket = require('socket.io-client')('http://localhost:8000');
+const socket = require('socket.io-client')('https://vast-earth-81912.herokuapp.com');
 socket.on('connect', function(){
   console.log(`[!] Ready`);
 });
